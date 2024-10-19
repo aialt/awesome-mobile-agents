@@ -3,83 +3,73 @@
 
 ## Datasets and Benchmarks
 
- | Dataset                      | Templates | Attach | Task             | Reward         | Platform          |
+| Dataset                      | Templates | Attach | Task             | Reward         | Platform          |
 |------------------------------|------------|--------|------------------|----------------|-------------------|
 | **Static Dataset**           |            |        |                  |                |                   |
 | RICOSCA (Deka et al., 2017)  | 259k       | -      | Grounding        | -              | Android           |
 | ANDROIDHOWTO (Deka et al., 2017) | 10k    | -      | Extraction       | -              | Android           |
 | PixelHelp (Li et al., 2020a) | 187        | -      | Apps             | -              | Android           |
-| WebSRC (Chen et al., 2021)   | 400k       | HTML   | Web              | -              | Windows           |
-| Screen2words (Wang et al., 2021) | 112k  | XML    | Summarization    | -              | Android           |
+| Screen2Words (Wang et al., 2021) | 112k   | XML    | Summarization    | -              | Android           |
 | META-GUI (Lee et al., 2021)  | 1,125      | -      | Apps+Web         | -              | Android           |
 | MoTIF (Wang et al., 2022)    | 4,707      | -      | Apps             | -              | Android           |
 | UGIF (Venkatesh et al., 2022) | 4184     | XML    | Grounding        | -              | Android           |
-| WebUI (Wu et al., 2023)      | 400k       | HTML   | Web              | -              | Windows           |
-| Mind2Web (Deng et al., 2024) | 2,350      | HTML   | Web              | -              | Windows           |
 | AitW (Rawles et al., 2024b)  | 30k        | -      | Apps+Web         | -              | Android           |
 | AitZ (Zhang et al., 2024b)   | 2504       | -      | Apps+Web         | -              | Android           |
 | AMEX (Chai et al., 2024)     | 3k         | XML    | Apps+Web         | -              | Android           |
-| Ferret-UI (You et al., 2024) | 120k       | HTML   | Apps             | -              | Multi-Platforms   |
-| OmniAct (Kapoor et al., 2024) | 9802      | Org/Seg | Web             | -              | Windows           |
-| WebLINX (Roßner et al., 2020) | 2,337     | HTML   | Web              | -              | Windows           |
-| ScreenAgent (Niu et al., 2024) | 3005     | HTML   | Web              | -              | Windows           |
+| Ferret-UI (You et al., 2024) | 120k       | -      | Apps             | -              | IOS               |
 | GUI-World (Chen et al., 2024a) | 12k      | -      | Apps+Web         | -              | Multi Platforms   |
 | Mobile3M (Chen et al., 2024a) | 3M        | -      | Apps             | -              | Android           |
+| Odyssey (Lu et al., 2024)    | 7735       | -      | Apps+Web         | -              | Multi Platforms   |
 | **Interactive Environment**  |            |        |                  |                |                   |
-| MiniWoB++ (Liu et al., 2018) | 114        | -      | Web (synthetic)  | HTML/JS state  | -                 |
-| AndroidEnv (Toyama et al., 2021) | 100    | -      | Apps             | Device state   | Android           |
-| WebShop (Yao et al., 2022a)  | 12k        | -      | Web              | Product Attrs Match | Windows     |
-| WebArena (Zhou et al., 2023) | 241        | HTML   | Web              | url/text-match | Windows           |
-| Mobile-Env (Zhang et al., 2023a) | 224    | XML    | Apps+Web         | Intermediate state | Android      |
-| VisualWebArena (Koh et al., 2024) | 314   | HTML   | Web              | url/text/image-match | Windows     |
-| Ferret-UI (You et al., 2024) | 314        | HTML   | Web              | url/text/image-match | Windows     |
-| AndroidArena (Wang et al., 2024c) | 221   | XML    | Apps+Web         | Device state   | Android           |
-| AndroidWorld (Rawles et al., 2024a) | 116 | -      | Apps+Web         | Device state   | Android           |
-| OSWorld (Xie et al., 2024)   | 369        | -      | Web              | Device/Cloud state | Linux         |
+| MiniWoB++ (Liu et al., 2018) | 114        | -      | Web (synthetic)  | Sparse Rewards | -                 |
+| AndroidEnv (Toyama et al., 2021) | 100    | -      | Apps             | Sparse Rewards | Android           |
+| AppBuddy (Shvo et al., 2021) | 35         | -      | Apps             | Sparse Rewards | Android           |
+| Mobile-Env (Zhang et al., 2023a) | 224    | XML    | Apps+Web         | Dense Rewards  | Android           |
+| AndroidArena (Wang et al., 2024c) | 221   | XML    | Apps+Web         | Sparse Rewards | Android           |
+| AndroidWorld (Rawles et al., 2024a) | 116 | -      | Apps+Web         | Sparse Rewards | Android           |
 | DroidTask (Wen et al., 2024) | 158        | XML    | Apps+Web         | -              | Android           |
+| B-MoCA (Lee et al., 2024)    | 60         | XML    | Apps+Web         | -              | Android           |
+| Mobile-Bench (Deng et al., 2024a) | 832   | XML    | Apps+Web         | -              | Android           |
 
-*Table 1: Comparison of various platforms based on parallelization, templates, tasks per template, rewards, and supported OS.*
+*Comparison of various platforms based on templates, attach information, tasks, rewards, and supported platforms. In particular, the reward mechanisms are categorized as Sparse Rewards and Dense Rewards. Sparse Rewards are given only when the agent reaches a specific goal or completes the task, making learning more difficult due to the lack of immediate feedback. On the other hand, Dense Rewards provides feedback after each step or action, helping the agent learn the correct strategy more quickly.*
 
+For general OS systems, see the section on [`General OS Systems`](#general-os-systems).
 
 ## Mobile Agents
 
-| Method                      | Input Type  | Model            | Training   | Memory | Task       | Multi-agents |
-|-----------------------------|-------------|------------------|------------|--------|------------|--------------|
-| **Prompt-based Methods**    |             |                  |            |        |            |              |
-| ReAct (Yao et al., 2022b)   | Text        | GPT-4            | None       | ✓      | Web        | ✗            |
-| ResponsibleTA (Zhang et al., 2023c) | Image&Text | GPT-4 | None | ✓ | Apps+Web  | ✗            |
-| MM-Navigator (Yan et al., 2023) | Image&Text | GPT-4 | None | ✓ | Apps+Web | ✗      |
-| DroidGPT (Wen et al., 2023b) | Text       | ChatGPT          | None       | ✗      | Apps       | ✗            |
-| MindAct (Deng et al., 2024)  | Text       | GPT-4            | None       | ✓      | Apps+Web  | ✗            |
-| AppAgent (Yang et al., 2023) | Image&Text | GPT-4            | None       | ✓      | Apps+Web  | ✗            |
-| MobileAgent (Wang et al., 2024b) | Image&Text | GPT-4 | None | ✓ | Apps+Web | ✗    |
-| MobileAgent v2 (Wang et al., 2024a) | Image&Text | GPT-4 | None | ✓ | Apps+Web | ✗  |
-| OmniAct (Kapoor et al., 2024) | Image&Text | GPT-4 | None | ✓ | Apps+Web | ✗      |
-| AutoDroid (Wen et al., 2024) | Image&Text | GPT-4 | None | ✓ | Apps+Web | ✗       |
-| AppAgent V2 (Li et al., 2024) | Image&Text | GPT-4 | None | ✓ | Apps+Web | ✗      |
-| **Training-based Methods**   |             |                  |            |        |            |              |
-| MiniWob (Liu et al., 2018)   | Image       | DOMNET           | RL-based   | ✗      | Web*       | ✗            |
-| VUT (Li et al., 2021)        | Image&Text  | Encoder-Decoder  | Pre-trained | ✗     | Web        | ✗            |
-| MetaGUI (Sun et al., 2022)   | Image&Text  | VLM              | Pre-trained | ✗     | Apps       | ✗            |
-| Spotlight (Li and Li, 2022)  | Image&Text  | Encoder-Decoder  | Pre-trained | ✗     | Web        | ✗            |
-| CogAgent (Hong et al., 2023) | Image&Text  | Cog VLM          | Pre-trained | ✓     | Apps+Web   | ✗            |
-| AutoGUI (Zhang and Zhang, 2023) | Image&Text | MMT5 | Finetune | ✗ | Apps+Web | ✗   |
-| ResponsibleTA (Zhang et al., 2023c) | Image&Text | VLM | Finetune | ✓ | Apps+Web | ✗ |
-| ScreenAI (Baechler et al., 2024) | Image&Text | Encoder-Decoder | Pre-trained | ✗ | Web | ✗  |
-| ScreenAgent (Niu et al., 2024) | Image&Text | CogAgent | Pre-trained | ✓ | Apps+Web | ✗ |
-| SeeClick (Cheng et al., 2024) | Image&Text | Qwen | Pre-trained | ✗ | Web | ✗      |
-| UI-VLM (Dorka et al., 2024)  | Image&Text  | LLaMA            | Finetune   | ✓      | Apps+Web   | ✗            |
-| Coco-Agent (Ma et al., 2024) | Image&Text  | MMT5             | Finetune   | ✗      | Apps+Web   | ✗            |
-| DigiRL (Bai et al., 2024)    | Image&Text  | MMT5             | RL-based   | ✗      | Apps+Web   | ✗            |
-| Ferret-UI (You et al., 2024) | Image&Text  | VLM              | Finetune   | ✓      | Apps       | ✗            |
-| SphAgent (Chai et al., 2024) | Image&Text  | VLM              | Finetune   | ✓      | Apps+Web   | ✗            |
-| Octo-planner (Chen et al., 2024c) | Image&Text | Gemma | Finetune | ✓ | Apps+Web | ✓ |
-| MobileVLM (Wu et al., 2024)  | Image&Text  | Qwen-VL          | Finetune   | ✓      | Apps       | ✗            |
+| Method                        | Input Type  | Model     | Training   | Memory | Multi-agents |
+|-------------------------------|-------------|-----------|------------|--------|--------------|
+| **Prompt-based Methods**      |             |           |            |        |              |
+| ResponsibleTA (Zhang et al., 2023c) | Image&Text | GPT-4     | None       | ✓      | ✗            |
+| DroidGPT (Wen et al., 2023b)  | Text        | ChatGPT   | None       | ✗      | ✗            |
+| AppAgent (Yang et al., 2023)  | Image&Text  | GPT-4     | None       | ✓      | ✗            |
+| MobileAgent (Wang et al., 2024b) | Image&Text | GPT-4   | None       | ✓      | ✗            |
+| MobileAgent v2 (Wang et al., 2024a) | Image&Text | GPT-4 | None  | ✓      | ✓            |
+| AutoDroid (Wen et al., 2024)  | Image&Text  | GPT-4     | None       | ✓      | ✗            |
+| AppAgent V2 (Li et al., 2024) | Image&Text  | GPT-4     | None       | ✓      | ✗            |
+| VLUI (Lee et al., 2024)       | Image&Text  | GPT4      | None       | ✗      | ✗            |
+| **Training-based Methods**    |             |           |            |        |              |
+| MiniWob (Liu et al., 2018)    | Image       | DOMNET    | RL-based   | ✗      | ✗            |
+| MetaGUI (Sun et al., 2022)    | Image&Text  | VLM       | Pre-trained| ✗      | ✗            |
+| CogAgent (Hong et al., 2023)  | Image&Text  | CogVLM    | Pre-trained| ✗      | ✗            |
+| AutoGUI (Zhang and Zhang, 2023) | Image&Text | MMT5     | Finetune   | ✓      | ✗            |
+| ResponsibleTA (Zhang et al., 2023c) | Image&Text | VLM   | Finetune   | ✓      | ✗            |
+| UI-VLM (Dorka et al., 2024)   | Image&Text  | LLaMA     | Finetune   | ✓      | ✗            |
+| Coco-Agent (Ma et al., 2024)  | Image&Text  | MMT5      | Finetune   | ✓      | ✗            |
+| DigiRL (Bai et al., 2024)     | Image&Text  | MMT5      | RL-based   | ✗      | ✗            |
+| SphAgent (Chai et al., 2024)  | Image&Text  | VLM       | Finetune   | ✗      | ✗            |
+| Octopus v2 (Chen and Li, 2024) | Text       | Gemma     | Finetune   | ✗      | ✗            |
+| Octo-planner (Chen et al., 2024c) | Text    | Gemma     | Finetune   | ✗      | ✓            |
+| MobileVLM (Wu et al., 2024)   | Image&Text  | Qwen-VL   | Finetune   | ✓      | ✗            |
+| OdysseyAgent (Lu et al., 2024) | Image&Text | Qwen-VL   | Finetune   | ✓      | ✗            |
 
-*Table 2: Comparison of Mobile Agents: A Detailed Overview of Input Types, Models, Training Methods, Memory Capabilities, Tasks, and Multi-agent Support. Web* means synthesized web data.*
+*Comparison of Mobile Agents: A Detailed Overview of Input Types, Models, Training Methods, Memory Capabilities, and Multi-agent Support.*
 
 
 
+
+% Unimodal MOBILE AGENTS
+% Multimodal MOBILE AGENTS 
 
 ## Base Model
 
@@ -240,12 +230,43 @@
 
 --- 
 
-## Star History
+## Appendix
 
-<a href="https://github.com/White65534/Awesome-Mobile-Agent&Date">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=aialt/awesome-mobile-agents&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=aialt/awesome-mobile-agents&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=aialt/awesome-mobile-agents&type=Date" />
- </picture>
-</a>
+### General OS Systems
+
+ | Dataset                      | Templates | Attach | Task             | Reward         | Platform          |
+|------------------------------|------------|--------|------------------|----------------|-------------------|
+| **Static Dataset**           |            |        |                  |                |                   |
+| RICOSCA (Deka et al., 2017)  | 259k       | -      | Grounding        | -              | Android           |
+| ANDROIDHOWTO (Deka et al., 2017) | 10k    | -      | Extraction       | -              | Android           |
+| PixelHelp (Li et al., 2020a) | 187        | -      | Apps             | -              | Android           |
+| WebSRC (Chen et al., 2021)   | 400k       | HTML   | Web              | -              | Windows           |
+| Screen2words (Wang et al., 2021) | 112k  | XML    | Summarization    | -              | Android           |
+| META-GUI (Lee et al., 2021)  | 1,125      | -      | Apps+Web         | -              | Android           |
+| MoTIF (Wang et al., 2022)    | 4,707      | -      | Apps             | -              | Android           |
+| UGIF (Venkatesh et al., 2022) | 4184     | XML    | Grounding        | -              | Android           |
+| WebUI (Wu et al., 2023)      | 400k       | HTML   | Web              | -              | Windows           |
+| Mind2Web (Deng et al., 2024) | 2,350      | HTML   | Web              | -              | Windows           |
+| AitW (Rawles et al., 2024b)  | 30k        | -      | Apps+Web         | -              | Android           |
+| AitZ (Zhang et al., 2024b)   | 2504       | -      | Apps+Web         | -              | Android           |
+| AMEX (Chai et al., 2024)     | 3k         | XML    | Apps+Web         | -              | Android           |
+| Ferret-UI (You et al., 2024) | 120k       | HTML   | Apps             | -              | Multi-Platforms   |
+| OmniAct (Kapoor et al., 2024) | 9802      | Org/Seg | Web             | -              | Windows           |
+| WebLINX (Roßner et al., 2020) | 2,337     | HTML   | Web              | -              | Windows           |
+| ScreenAgent (Niu et al., 2024) | 3005     | HTML   | Web              | -              | Windows           |
+| GUI-World (Chen et al., 2024a) | 12k      | -      | Apps+Web         | -              | Multi Platforms   |
+| Mobile3M (Chen et al., 2024a) | 3M        | -      | Apps             | -              | Android           |
+| **Interactive Environment**  |            |        |                  |                |                   |
+| MiniWoB++ (Liu et al., 2018) | 114        | -      | Web (synthetic)  | HTML/JS state  | -                 |
+| AndroidEnv (Toyama et al., 2021) | 100    | -      | Apps             | Device state   | Android           |
+| WebShop (Yao et al., 2022a)  | 12k        | -      | Web              | Product Attrs Match | Windows     |
+| WebArena (Zhou et al., 2023) | 241        | HTML   | Web              | url/text-match | Windows           |
+| Mobile-Env (Zhang et al., 2023a) | 224    | XML    | Apps+Web         | Intermediate state | Android      |
+| VisualWebArena (Koh et al., 2024) | 314   | HTML   | Web              | url/text/image-match | Windows     |
+| Ferret-UI (You et al., 2024) | 314        | HTML   | Web              | url/text/image-match | Windows     |
+| AndroidArena (Wang et al., 2024c) | 221   | XML    | Apps+Web         | Device state   | Android           |
+| AndroidWorld (Rawles et al., 2024a) | 116 | -      | Apps+Web         | Device state   | Android           |
+| OSWorld (Xie et al., 2024)   | 369        | -      | Web              | Device/Cloud state | Linux         |
+| DroidTask (Wen et al., 2024) | 158        | XML    | Apps+Web         | -              | Android           |
+
+*Comparison of various platforms based on parallelization, templates, tasks per template, rewards, and supported OS.*
