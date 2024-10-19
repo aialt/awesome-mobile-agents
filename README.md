@@ -81,10 +81,6 @@
 
 
 
-
-% Unimodal MOBILE AGENTS
-% Multimodal MOBILE AGENTS 
-
 ## Base Model
 
 - CogVLM: Visual Expert for Pretrained Language Models
