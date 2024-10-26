@@ -1,6 +1,10 @@
 
 # Recent Trends in Multimodal Mobile Agents: A Survey
 
+![Example Image](img.webp)
+
+
+
 ## Datasets and Benchmarks
 
 | Dataset                      | Templates | Attach | Task             | Reward         | Platform          |
