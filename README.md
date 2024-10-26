@@ -72,8 +72,6 @@ For general OS systems, see the section on [`General OS Systems`](#general-os-sy
 
 
 
-% Unimodal MOBILE AGENTS
-% Multimodal MOBILE AGENTS 
 
 ## Base Model
 
