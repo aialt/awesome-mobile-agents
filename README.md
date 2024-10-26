@@ -73,57 +73,57 @@ For general OS systems, see the section on [`General OS Systems`](#general-os-sy
 
 ## Base Model
 
-- CogVLM: Visual Expert for Pretrained Language Models
-- MiniCPM
-- LLaVA-NeXT
-- LLaVA-OneVision: Easy Visual Task Transfer
-- SeeClick: Harnessing GUI Grounding for Advanced Visual GUI Agents (ACL2024)
+- CogVLM: Visual Expert for Pretrained Language Models https://arxiv.org/abs/2311.03079
+- MiniCPM: Unveiling the Potential of Small Language Models with Scalable Training Strategies https://arxiv.org/abs/2404.06395
+- LLaVA-NeXT: Improved reasoning, OCR, and world knowledge https://llava-vl.github.io/blog/2024-01-30-llava-next/
+- LLaVA-OneVision: Easy Visual Task Transfer https://arxiv.org/abs/2408.03326
+- SeeClick: Harnessing GUI Grounding for Advanced Visual GUI Agents (ACL2024) https://arxiv.org/abs/2401.10935
 
 
 ## Prompt Based Framework
 
 
 
-- AppAgent: Multimodal Agents as Smartphone Users
-- Mobile-Agent: Autonomous Multi-Modal Mobile Device Agent with Visual Perception
-- UFO: A UI-Focused Agent for Windows OS Interaction
-- OS-Copilot: Towards Generalist Computer Agents with Self-Improvement
-- MMAC-Copilot: Multi-modal Agent Collaboration Operating System Copilot
+- AppAgent: Multimodal Agents as Smartphone Users https://arxiv.org/abs/2312.13771
+- Mobile-Agent: Autonomous Multi-Modal Mobile Device Agent with Visual Perception https://arxiv.org/abs/2401.16158
+- UFO: A UI-Focused Agent for Windows OS Interaction https://arxiv.org/abs/2402.07939
+- OS-Copilot: Towards Generalist Computer Agents with Self-Improvement https://arxiv.org/abs/2402.07456
+- MMAC-Copilot: Multi-modal Agent Collaboration Operating System Copilot https://arxiv.org/abs/2404.18074
 
 
 
 
 ## LLM-SFT Based Framework
-- CogAgent: A Visual Language Model for GUI Agents
-- ScreenAI: A Vision-Language Model for UI and Infographics Understanding
-- TRAINING A VISION LANGUAGE MODEL AS SMARTPHONE ASSISTANT (ICLR 2024)
-- AGENTOHANA: Designing a Unified Data and Training Pipeline for Effective Agent Learning
+- CogAgent: A Visual Language Model for GUI Agents https://arxiv.org/abs/2312.08914
+- ScreenAI: A Vision-Language Model for UI and Infographics Understanding https://arxiv.org/abs/2402.04615
+- TRAINING A VISION LANGUAGE MODEL AS SMARTPHONE ASSISTANT (ICLR 2024) https://arxiv.org/abs/2404.08755
+- AGENTOHANA: Designing a Unified Data and Training Pipeline for Effective Agent Learning https://arxiv.org/abs/2402.15506
 
 
 
 ## LLM-RL Based Framework
 
-- Vision-Language Models as Decision-Making Agents
-- DigiRL: Training In-The-Wild Device-Control Agents with Autonomous Reinforcement (NIPS2024)
+- Fine-Tuning Large Vision-Language Models as Decision-Making Agents via Reinforcement Learning https://arxiv.org/pdf/2405.10292
+- DigiRL: Training In-The-Wild Device-Control Agents with Autonomous Reinforcement (NIPS2024) https://arxiv.org/abs/2406.11896
 
 **UI understanding and Automation**
 
 
-- UIED: a hybrid tool for GUI element detection
-- Object Detection for Graphical User Interface: Old Fashioned or Deep Learning or a Combination?
-- AutoDroid: LLM-powered Task Automation in Android  CHI 2024
-- Spotlight: Mobile UI Understanding using Vision-Language Models with a Focus    ICLR 2023
-- VUT: Versatile UI Transformer for Multimodal Multi-Task User Interface Modeling    ICLR 2022
-- Widget Captioning: Generating Natural Language Description for Mobile User Interface Elements    EMNLP 2020
-- Screen Recognition: Creating Accessibility Metadata for Mobile Applications from Pixels       CHI 2021
-- Enabling Conversational Interaction with Mobile UI Using Large Language Models     CHI 2023
-- Screen2Words: Automatic Mobile UI Summarization with Multimodal Learning    UIST 2021
-- Kite: Building Conversational Bots from Mobile Apps    Mobisys 2018
-- META-GUI: Towards Multi-modal Conversational Agents on Mobile GUI
-- DroidBot-GPT: GPT-powered UI Automation for Android
-- Responsible Task Automation: Empowering Large Language Models as Responsible Task Automation
-- Personal LLM Agents: Insights and Survey about the Capability, Efficiency and Security
-- MMAC-Copilot: Multi-modal Agent Collaboration Operating System Copilot
+- UIED: a hybrid tool for GUI element detection https://sidongfeng.github.io/papers/uied.pdf
+- Object Detection for Graphical User Interface: Old Fashioned or Deep Learning or a Combination? https://arxiv.org/abs/2008.05132
+- AutoDroid: LLM-powered Task Automation in Android  CHI 2024 https://arxiv.org/abs/2308.15272
+- Spotlight: Mobile UI Understanding using Vision-Language Models with a Focus    ICLR 2023 https://arxiv.org/abs/2209.14927
+- VUT: Versatile UI Transformer for Multimodal Multi-Task User Interface Modeling    ICLR 2022 https://arxiv.org/abs/2112.05692
+- Widget Captioning: Generating Natural Language Description for Mobile User Interface Elements    EMNLP 2020 https://arxiv.org/abs/2010.04295
+- Screen Recognition: Creating Accessibility Metadata for Mobile Applications from Pixels       CHI 2021 https://arxiv.org/abs/2101.04893
+- Enabling Conversational Interaction with Mobile UI Using Large Language Models     CHI 2023 https://arxiv.org/abs/2209.08655
+- Screen2Words: Automatic Mobile UI Summarization with Multimodal Learning    UIST 2021 https://arxiv.org/abs/2108.03353
+- Kite: Building Conversational Bots from Mobile Apps    Mobisys 2018 https://dl.acm.org/doi/10.1145/3210240.3210339
+- META-GUI: Towards Multi-modal Conversational Agents on Mobile GUI https://arxiv.org/abs/2205.11029
+- DroidBot-GPT: GPT-powered UI Automation for Android https://arxiv.org/abs/2304.07061
+- Responsible Task Automation: Empowering Large Language Models as Responsible Task Automation https://arxiv.org/abs/2306.01242
+- Personal LLM Agents: Insights and Survey about the Capability, Efficiency and Security https://arxiv.org/abs/2401.05459
+- MMAC-Copilot: Multi-modal Agent Collaboration Operating System Copilot https://chatpaper.com/chatpaper/zh-CN/paper/17441
 
 
 
@@ -133,36 +133,36 @@ For general OS systems, see the section on [`General OS Systems`](#general-os-sy
 ## Dataset and Benchmark
 
 ### 2017
-- Scaling Instructable Agents Across Many Simulated Worlds (2017)
+- Scaling Instructable Agents Across Many Simulated Worlds (2017) https://arxiv.org/abs/2404.10179
 
 ### 2022
-- MiniWoB++ / Success Rate (2022)
+- MiniWoB++ / Success Rate (2022) https://miniwob.farama.org/ https://arxiv.org/abs/1802.08802
 
 ### 2023
-- MoTIF: A Dataset for Interactive Vision-Language Navigation with Unknown Command Feasibility (2023)
-- IND2WEB: Towards a Generalist Agent for the Web (2023)
-- WebArena: A Realistic Web Environment for Building Autonomous Agents (2023)
+- MoTIF: A Dataset for Interactive Vision-Language Navigation with Unknown Command Feasibility (2023) https://arxiv.org/abs/2202.02312
+- IND2WEB: Towards a Generalist Agent for the Web (2023) https://arxiv.org/abs/2306.06070
+- WebArena: A Realistic Web Environment for Building Autonomous Agents (2023) https://arxiv.org/abs/2307.13854
 
 
  
 ### 2024
-- Android in the Wild: A Large-Scale Dataset for Android Device Control (2024)
-- ANDROIDWORLD / Success Rate
-- OSWORLD: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments / Success Rate
-- Screen Agent (ACL2024)
-- OmniACT: A Dataset and Benchmark for Enabling Multimodal Generalist Autonomous Agents for Desktop and Web / Sequence score
-- Ferret-UI: Grounded Mobile UI Understanding with Multimodal LLMs
-- AutoUI: You Only Look at Screens: Multimodal Chain-of-Action Agents (ACL2024)
-- GUI-WORLD: A Dataset for GUI-oriented Multimodal LLM-based Agents
+- Android in the Wild: A Large-Scale Dataset for Android Device Control (2024) https://arxiv.org/abs/2307.10088
+- AndroidWorld: A Dynamic Benchmarking Environment for Autonomous Agents / Success Rate https://google-research.github.io/android_world/
+- OSWORLD: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments / Success Rate https://arxiv.org/abs/2404.07972
+- ScreenAgent: A Vision Language Model-driven Computer Control Agent (ACL2024) https://arxiv.org/abs/2402.07945
+- OmniACT: A Dataset and Benchmark for Enabling Multimodal Generalist Autonomous Agents for Desktop and Web / Sequence score https://arxiv.org/abs/2402.17553
+- Ferret-UI: Grounded Mobile UI Understanding with Multimodal LLMs https://arxiv.org/abs/2404.05719
+- AutoUI: You Only Look at Screens: Multimodal Chain-of-Action Agents (ACL2024) https://arxiv.org/abs/2309.11436
+- GUI-WORLD: A Dataset for GUI-oriented Multimodal LLM-based Agents https://arxiv.org/abs/2406.10819
 
-- Octo-planner: On-device Language Model for Planner-Action Agents
-- AppWorld: A Controllable World of Apps and People for Benchmarking Interactive Coding Agents (ACL2024)
-- Mobile-Bench: An Evaluation Benchmark for LLM-based Mobile Agents (ACL2024)
-- VisualWebArena: Evaluating Multimodal Agents on Realistic Visually Grounded Web Tasks (ACL2024)
-- WebCanvas: Benchmarking Web Agents in Online Environments
-- MobileAgentBench: An Efficient and User-Friendly Benchmark for Mobile LLM Agents
-- GUICourse: From General Vision Language Model to Versatile GUI Agent
-- CoCo-Agent: A Comprehensive Cognitive MLLM Agent for Smartphone GUI Automation
+- Octo-planner: On-device Language Model for Planner-Action Agents https://arxiv.org/abs/2406.18082
+- AppWorld: A Controllable World of Apps and People for Benchmarking Interactive Coding Agents (ACL2024) https://arxiv.org/abs/2407.18901
+- Mobile-Bench: An Evaluation Benchmark for LLM-based Mobile Agents (ACL2024) https://arxiv.org/abs/2407.00993
+- VisualWebArena: Evaluating Multimodal Agents on Realistic Visually Grounded Web Tasks (ACL2024) https://arxiv.org/abs/2401.13649
+- WebCanvas: Benchmarking Web Agents in Online Environments https://arxiv.org/abs/2406.12373
+- MobileAgentBench: An Efficient and User-Friendly Benchmark for Mobile LLM Agents https://arxiv.org/abs/2406.08184
+- GUICourse: From General Vision Language Model to Versatile GUI Agent https://arxiv.org/abs/2406.11317
+- CoCo-Agent: A Comprehensive Cognitive MLLM Agent for Smartphone GUI Automation https://arxiv.org/abs/2402.11941
 
   
 
@@ -212,8 +212,8 @@ For general OS systems, see the section on [`General OS Systems`](#general-os-sy
 - WebLlama: https://github.com/McGill-NLP/webllama
 - AutoCrawler: A Progressive Understanding Web Agent for Web Crawler Generation https://arxiv.org/abs/2404.12753
 
-- WebVoyager: Building an End-to-End Web Agent with Large Multimodal Models (ACL2024)
-- Tuning Large Multimodal Models for Videos using Reinforcement Learning from AI Feedback (ACL2024)
+- WebVoyager: Building an End-to-End Web Agent with Large Multimodal Models (ACL2024) https://arxiv.org/abs/2401.13919
+- Tuning Large Multimodal Models for Videos using Reinforcement Learning from AI Feedback (ACL2024) https://arxiv.org/abs/2402.03746
 
 
 # Citation
