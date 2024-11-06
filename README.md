@@ -234,13 +234,12 @@ For general OS systems, see the section on [`General OS Systems`](#general-os-sy
 # Citation
 
 ```bib
-@article{wu2024curriculum,
-  title={Curriculum Learning with Quality-Driven Data Selection},
-  author={Wu, Biao and Meng, Fang and Chen, Ling},
-  journal={arXiv preprint arXiv:2407.00102},
-  year={2024}
-}
+ 
 ```
+
+
+
+
 ## Star History
 
 <a href="https://github.com/aialt/awesome-mobile-agents&Date">
