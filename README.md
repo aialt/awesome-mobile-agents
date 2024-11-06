@@ -17,13 +17,15 @@
 | META-GUI (Lee et al., 2021)  | 1,125      | -      | Apps+Web         | -              | Android           |
 | MoTIF (Wang et al., 2022)    | 4,707      | -      | Apps             | -              | Android           |
 | UGIF (Venkatesh et al., 2022) | 4184     | XML    | Grounding        | -              | Android           |
-| AitW (Rawles et al., 2024b)  | 30k        | -      | Apps+Web         | -              | Android           |
+| AitW (Rawles et al., 2024b)  | 1000k        | -      | Apps+Web         | -              | Android           |
 | AitZ (Zhang et al., 2024b)   | 2504       | -      | Apps+Web         | -              | Android           |
 | AMEX (Chai et al., 2024)     | 3k         | XML    | Apps+Web         | -              | Android           |
 | Ferret-UI (You et al., 2024) | 120k       | -      | Apps             | -              | IOS               |
 | GUI-World (Chen et al., 2024a) | 12k      | -      | Apps+Web         | -              | Multi Platforms   |
 | Mobile3M (Chen et al., 2024a) | 3M        | -      | Apps             | -              | Android           |
 | Odyssey (Lu et al., 2024)    | 7735       | -      | Apps+Web         | -              | Multi Platforms   |
+| Androidcontrol               | 15283       | -      | Apps+Web         | -              | Android   |
+| ScreenSpot (SeeClick)        | -           | -      | Apps+Web         | -              | Multi Platforms   |
 | **Interactive Environment**  |            |        |                  |                |                   |
 | MiniWoB++ (Liu et al., 2018) | 114        | -      | Web (synthetic)  | Sparse Rewards | -                 |
 | AndroidEnv (Toyama et al., 2021) | 100    | -      | Apps             | Sparse Rewards | Android           |
@@ -71,8 +73,6 @@ For general OS systems, see the section on [`General OS Systems`](#general-os-sy
 
 
 
-
-
 ## Base Model
 
 - CogVLM: Visual Expert for Pretrained Language Models https://arxiv.org/abs/2311.03079
@@ -81,6 +81,7 @@ For general OS systems, see the section on [`General OS Systems`](#general-os-sy
 - LLaVA-OneVision: Easy Visual Task Transfer https://arxiv.org/abs/2408.03326
 - SeeClick: Harnessing GUI Grounding for Advanced Visual GUI Agents (ACL2024) https://arxiv.org/abs/2401.10935
 - CogAgent: A Visual Language Model for GUI Agents http://arxiv.org/abs/2312.08914
+- Os-Atlas: a foundation action model for generalist gui agents https://arxiv.org/pdf/2410.23218
 
 
 
@@ -95,7 +96,9 @@ For general OS systems, see the section on [`General OS Systems`](#general-os-sy
 - OmniACT: A Dataset and Benchmark for Enabling Multimodal Generalist Autonomous Agents for Desktop and Web http://arxiv.org/abs/2402.17553
 - Comprehensive Cognitive LLM Agent for Smartphone GUI Automation http://arxiv.org/abs/2402.11941
 - Tree Search for Language Model Agents https://arxiv.org/abs/2407.01476
-
+- AutoDroid: LLM-powered Task Automation in Android https://arxiv.org/abs/2308.15272
+- AutoGLM: Autonomous Foundation Agents for GUIs https://arxiv.org/pdf/2411.00820
+- ClickAgent: Enhancing UI Location Capabilities of Autonomous Agents  https://arxiv.org/pdf/2410.11872
 
 
 ## LLM-SFT Based Framework
@@ -111,7 +114,7 @@ For general OS systems, see the section on [`General OS Systems`](#general-os-sy
 - You Only Look at Screens: Multimodal Chain-of-Action Agents https://arxiv.org/abs/2309.11436 https://github.com/cooelf/Auto-GUI
 - Comprehensive Cognitive LLM Agent for Smartphone GUI Automation http://arxiv.org/abs/2402.11941
 - Improving Language Understanding from Screenshots http://arxiv.org/abs/2402.14073
-- OmniParser for Pure Vision Based GUI Agent
+
 
 
 
@@ -195,39 +198,36 @@ For general OS systems, see the section on [`General OS Systems`](#general-os-sy
 - Mobile-Env: An Evaluation Platform and Benchmark for LLM-GUI Interaction https://arxiv.org/abs/2305.08144
 - OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments https://arxiv.org/abs/2404.07972
 - Ferret-UI: Grounded Mobile UI Understanding with Multimodal LLMs https://arxiv.org/abs/2404.05719
-
-
-## To-Do List
-
-
-
-- LaVague: Web Agent framework for builders https://github.com/lavague-ai/LaVague
-- WebLlama: https://github.com/McGill-NLP/webllama
-- AutoCrawler: A Progressive Understanding Web Agent for Web Crawler Generation https://arxiv.org/abs/2404.12753
-
-- WebVoyager: Building an End-to-End Web Agent with Large Multimodal Models (ACL2024) https://arxiv.org/abs/2401.13919
-- Tuning Large Multimodal Models for Videos using Reinforcement Learning from AI Feedback (ACL2024) https://arxiv.org/abs/2402.03746
+- Androidcontrol: On the Effects of Data Scale on Computer Control Agents
+- GUI Odyssey: A Comprehensive Dataset for Cross-App GUI Navigation on Mobile Devices https://github.com/OpenGVLab/GUI-Odyssey
 
 
 
+## Web & PC & OS DataSet
 
-- ReALM: Reference Resolution As Language Modeling https://arxiv.org/abs/2403.20329
-- AutoWebGLM: Bootstrap And Reinforce A Large Language Model-based Web Navigating Agent https://arxiv.org/abs/2404.03648
-
-
-
-
-- AutoDroid: LLM-powered Task Automation in Android https://arxiv.org/abs/2308.15272
+- WebShop: Towards Scalable Real-World Web Interaction with Grounded Language Agents https://arxiv.org/abs/2207.01206
 - Fine-Tuning Large Vision-Language Models as Decision-Making Agents via Reinforcement Learning https://rl4vlm.github.io
 - WebArena: A Realistic Web Environment for Building Autonomous Agents https://arxiv.org/abs/2307.13854
 - Synapse: Trajectory-as-Exemplar Prompting with Memory for Computer Control https://openreview.net/pdf?id=Pc8AU1aF5e
 - gpt-computer-assistant https://github.com/onuratakan/gpt-computer-assistant
-
-- GUI Odyssey: A Comprehensive Dataset for Cross-App GUI Navigation on Mobile Devices https://github.com/OpenGVLab/GUI-Odyssey
 - ASSISTGUI: Task-Oriented PC Graphical User Interface Automation https://showlab.github.io/assistgui/
-
 - Read Anywhere Pointed: Layout-aware GUI Screen Reading with Tree-of-Lens Grounding https://arxiv.org/abs/2406.19263
 - Cradle: Empowering Foundation Agents Towards General Computer Control https://arxiv.org/abs/2403.03186
+
+
+
+
+## Web & PC & OS Framework
+
+- Webrl: training llm web agents via self-evolving online curriculum reinforcement learning https://arxiv.org/pdf/2411.02337
+- AutoWebGLM: Bootstrap And Reinforce A Large Language Model-based Web Navigating Agent https://arxiv.org/abs/2404.03648
+- WebVoyager: Building an End-to-End Web Agent with Large Multimodal Models (ACL2024) https://arxiv.org/abs/2401.13919
+- LaVague: Web Agent framework for builders https://github.com/lavague-ai/LaVague
+- WebLlama: https://github.com/McGill-NLP/webllama
+- AutoCrawler: A Progressive Understanding Web Agent for Web Crawler Generation https://arxiv.org/abs/2404.12753
+- Tuning Large Multimodal Models for Videos using Reinforcement Learning from AI Feedback (ACL2024) https://arxiv.org/abs/2402.03746
+- ReALM: Reference Resolution As Language Modeling https://arxiv.org/abs/2403.20329
+
 
 
 
@@ -241,6 +241,15 @@ For general OS systems, see the section on [`General OS Systems`](#general-os-sy
   year={2024}
 }
 ```
+## Star History
+
+<a href="https://github.com/aialt/awesome-mobile-agents&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=aialt/awesome-mobile-agents&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=aialt/awesome-mobile-agents&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=aialt/awesome-mobile-agents&type=Date" />
+ </picture>
+</a>
 
 
 --- 
