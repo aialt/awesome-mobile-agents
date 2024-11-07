@@ -230,10 +230,13 @@ For general OS systems, see the section on [`General OS Systems`](#general-os-sy
 
 
 #### To Do List
-Ferret-UI 2: Mastering Universal User Interface Understanding Across Platforms
-OS-ATLAS: A Foundation Action Model for Generalist GUI Agents
-Infering Alt-text For UI Icons With Large Language Models During App Development
-TinyClick: Single-Turn Agent for Empowering GUI Automation
+- Ferret-UI 2: Mastering Universal User Interface Understanding Across Platforms
+- OS-ATLAS: A Foundation Action Model for Generalist GUI Agents
+- Infering Alt-text For UI Icons With Large Language Models During App Development
+- TinyClick: Single-Turn Agent for Empowering GUI Automation
+
+
+
 
 
 
