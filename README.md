@@ -245,7 +245,12 @@ For general OS systems, see the section on [`General OS Systems`](#general-os-sy
 # Citation
 
 ```bib
- 
+ @article{wu2024foundations,
+  title={Foundations and Recent Trends in Multimodal Mobile Agents: A Survey},
+  author={Wu, Biao and Li, Yanda and Fang, Meng and Song, Zirui and Zhang, Zhiwei and Wei, Yunchao and Chen, Ling},
+  journal={arXiv preprint arXiv:2411.02006},
+  year={2024}
+}
 ```
 
 
