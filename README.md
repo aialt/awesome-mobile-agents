@@ -99,6 +99,7 @@ For general OS systems, see the section on [`General OS Systems`](#general-os-sy
 - AutoDroid: LLM-powered Task Automation in Android https://arxiv.org/abs/2308.15272
 - AutoGLM: Autonomous Foundation Agents for GUIs https://arxiv.org/pdf/2411.00820
 - ClickAgent: Enhancing UI Location Capabilities of Autonomous Agents  https://arxiv.org/pdf/2410.11872
+- OmniParser for Pure Vision Based GUI Agent https://arxiv.org/pdf/2408.00203
 
 
 ## LLM-SFT Based Framework
