@@ -115,6 +115,7 @@ For general OS systems, see the section on [`General OS Systems`](#general-os-sy
 - You Only Look at Screens: Multimodal Chain-of-Action Agents https://arxiv.org/abs/2309.11436 https://github.com/cooelf/Auto-GUI
 - Comprehensive Cognitive LLM Agent for Smartphone GUI Automation http://arxiv.org/abs/2402.11941
 - Improving Language Understanding from Screenshots http://arxiv.org/abs/2402.14073
+- LIGHTWEIGHT NEURAL APP CONTROL https://arxiv.org/abs/2410.17883
 
 
 
