@@ -100,6 +100,7 @@ For general OS systems, see the section on [`General OS Systems`](#general-os-sy
 - AutoGLM: Autonomous Foundation Agents for GUIs https://arxiv.org/pdf/2411.00820
 - ClickAgent: Enhancing UI Location Capabilities of Autonomous Agents  https://arxiv.org/pdf/2410.11872
 - OmniParser for Pure Vision Based GUI Agent https://arxiv.org/pdf/2408.00203
+- MobileAgent: enhancing mobile control via human-machine interaction and SOP integration https://arxiv.org/abs/2401.04124
 
 
 ## LLM-SFT Based Framework
