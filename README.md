@@ -5,11 +5,10 @@
 
 
 
-## Datasets and Benchmarks
+## Static Datasets and Benchmarks
 
 | Dataset                      | Templates | Attach | Task             | Reward         | Platform          |
-|------------------------------|------------|--------|------------------|----------------|-------------------|
-| **Static Dataset**           |            |        |                  |                |                   |
+|------------------------------|------------|--------|------------------|----------------|-------------------| 
 | RICOSCA (Deka et al., 2017)  | 259k       | -      | Grounding        | -              | Android           |
 | ANDROIDHOWTO (Deka et al., 2017) | 10k    | -      | Extraction       | -              | Android           |
 | PixelHelp (Li et al., 2020a) | 187        | -      | Apps             | -              | Android           |
@@ -29,10 +28,9 @@
 | MobileViews-600K             | 600k        | -      | Apps             | -              | Android          |
 
 
-
+## Interactive Datasets and Benchmarks
 | Dataset                      | Templates | Attach | Task             | Reward         | Platform          |
-|------------------------------|------------|--------|------------------|----------------|-------------------|
-| **Interactive Environment**  |            |        |                  |                |                   |
+|------------------------------|------------|--------|------------------|----------------|-------------------| 
 | MiniWoB++ (Liu et al., 2018) | 114        | -      | Web (synthetic)  | Sparse Rewards | -                 |
 | AndroidEnv (Toyama et al., 2021) | 100    | -      | Apps             | Sparse Rewards | Android           |
 | AppBuddy (Shvo et al., 2021) | 35         | -      | Apps             | Sparse Rewards | Android           |
