@@ -27,6 +27,11 @@
 | Androidcontrol               | 15283       | -      | Apps+Web         | -              | Android          |
 | ScreenSpot (SeeClick)        | -           | -      | Apps+Web         | -              | Multi Platforms   |
 | MobileViews-600K             | 600k        | -      | Apps             | -              | Android          |
+
+
+
+| Dataset                      | Templates | Attach | Task             | Reward         | Platform          |
+|------------------------------|------------|--------|------------------|----------------|-------------------|
 | **Interactive Environment**  |            |        |                  |                |                   |
 | MiniWoB++ (Liu et al., 2018) | 114        | -      | Web (synthetic)  | Sparse Rewards | -                 |
 | AndroidEnv (Toyama et al., 2021) | 100    | -      | Apps             | Sparse Rewards | Android           |
