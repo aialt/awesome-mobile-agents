@@ -9,40 +9,40 @@
 
 | Dataset                      | Templates | Attach | Task             | Reward         | Platform          |
 |------------------------------|------------|--------|------------------|----------------|-------------------| 
-| RICOSCA (Deka et al., 2017)  | 259k       | -      | Grounding        | -              | Android           |
-| ANDROIDHOWTO (Deka et al., 2017) | 10k    | -      | Extraction       | -              | Android           |
-| PixelHelp (Li et al., 2020a) | 187        | -      | Apps             | -              | Android           |
-| Screen2Words (Wang et al., 2021) | 112k   | XML    | Summarization    | -              | Android           |
-| META-GUI (Lee et al., 2021)  | 1,125      | -      | Apps+Web         | -              | Android           |
-| MoTIF (Wang et al., 2022)    | 4,707      | -      | Apps             | -              | Android           |
-| UGIF (Venkatesh et al., 2022) | 4184     | XML    | Grounding        | -              | Android           |
-| AitW (Rawles et al., 2024b)  | 1000k        | -      | Apps+Web         | -              | Android           |
-| AitZ (Zhang et al., 2024b)   | 2504       | -      | Apps+Web         | -              | Android           |
-| AMEX (Chai et al., 2024)     | 3k         | XML    | Apps+Web         | -              | Android           |
-| Ferret-UI (You et al., 2024) | 120k       | -      | Apps             | -              | IOS               |
-| GUI-World (Chen et al., 2024a) | 12k      | -      | Apps+Web         | -              | Multi Platforms   |
-| Mobile3M (Chen et al., 2024a) | 3M        | -      | Apps             | -              | Android           |
-| Odyssey (Lu et al., 2024)    | 7735       | -      | Apps+Web         | -              | Multi Platforms   |
-| Androidcontrol               | 15283       | -      | Apps+Web         | -              | Android          |
-| ScreenSpot (SeeClick)        | -           | -      | Apps+Web         | -              | Multi Platforms   |
-| MobileViews-600K             | 600k        | -      | Apps             | -              | Android          |
-
+| RICOSCA                     | 259k       | -      | Grounding        | -              | Android           |
+| ANDROIDHOWTO                | 10k        | -      | Extraction       | -              | Android           |
+| PixelHelp                   | 187        | -      | Apps             | -              | Android           |
+| Screen2Words                | 112k       | XML    | Summarization    | -              | Android           |
+| META-GUI                    | 1,125      | -      | Apps+Web         | -              | Android           |
+| MoTIF                       | 4,707      | -      | Apps             | -              | Android           |
+| UGIF                        | 4184       | XML    | Grounding        | -              | Android           |
+| AitW                        | 1000k      | -      | Apps+Web         | -              | Android           |
+| AitZ                        | 2504       | -      | Apps+Web         | -              | Android           |
+| AMEX                        | 3k         | XML    | Apps+Web         | -              | Android           |
+| Ferret-UI                   | 120k       | -      | Apps             | -              | IOS               |
+| GUI-World                   | 12k        | -      | Apps+Web         | -              | Multi Platforms   |
+| Mobile3M                    | 3M         | -      | Apps             | -              | Android           |
+| Odyssey                     | 7735       | -      | Apps+Web         | -              | Multi Platforms   |
+| Androidcontrol              | 15283      | -      | Apps+Web         | -              | Android           |
+| ScreenSpot                  | -          | -      | Apps+Web         | -              | Multi Platforms   |
+| MobileViews-600K            | 600k       | -      | Apps             | -              | Android           |
 
 ## Interactive Datasets and Benchmarks
 | Dataset                      | Templates | Attach | Task             | Reward         | Platform          |
 |------------------------------|------------|--------|------------------|----------------|-------------------| 
-| MiniWoB++ (Liu et al., 2018) | 114        | -      | Web (synthetic)  | Sparse Rewards | -                 |
-| AndroidEnv (Toyama et al., 2021) | 100    | -      | Apps             | Sparse Rewards | Android           |
-| AppBuddy (Shvo et al., 2021) | 35         | -      | Apps             | Sparse Rewards | Android           |
-| Mobile-Env (Zhang et al., 2023a) | 224    | XML    | Apps+Web         | Dense Rewards  | Android           |
-| AndroidArena (Wang et al., 2024c) | 221   | XML    | Apps+Web         | Sparse Rewards | Android           |
-| AndroidWorld (Rawles et al., 2024a) | 116 | -      | Apps+Web         | Sparse Rewards | Android           |
-| DroidTask (Wen et al., 2024) | 158        | XML    | Apps+Web         | -              | Android           |
-| B-MoCA (Lee et al., 2024)    | 60         | XML    | Apps+Web         | -              | Android           |
-| Mobile-Bench (Deng et al., 2024a) | 832   | XML    | Apps+Web         | -              | Android           |
-| MobileAgentBench /2024            | 100        | -      | Apps+Web         | Dense Rewards  | Android           |
-| SPA-BENCH  /2024                  | 340        | -      | Apps+Web         | Dense Rewards  | Android           |
-| CRAB  /2024                       | 23         | -      | Apps+Web         | -              | Android + Linux           |
+| MiniWoB++                   | 114        | -      | Web (synthetic)  | Sparse Rewards | -                 |
+| AndroidEnv                  | 100        | -      | Apps             | Sparse Rewards | Android           |
+| AppBuddy                    | 35         | -      | Apps             | Sparse Rewards | Android           |
+| Mobile-Env                  | 224        | XML    | Apps+Web         | Dense Rewards  | Android           |
+| AndroidArena                | 221        | XML    | Apps+Web         | Sparse Rewards | Android           |
+| AndroidWorld                | 116        | -      | Apps+Web         | Sparse Rewards | Android           |
+| DroidTask                   | 158        | XML    | Apps+Web         | -              | Android           |
+| B-MoCA                      | 60         | XML    | Apps+Web         | -              | Android           |
+| Mobile-Bench                | 832        | XML    | Apps+Web         | -              | Android           |
+| MobileAgentBench            | 100        | -      | Apps+Web         | Dense Rewards  | Android           |
+| SPA-BENCH                   | 340        | -      | Apps+Web         | Dense Rewards  | Android           |
+| CRAB                        | 23         | -      | Apps+Web         | -              | Android + Linux   |
+
 
 
 *Comparison of various platforms based on templates, attach information, tasks, rewards, and supported platforms. In particular, the reward mechanisms are categorized as Sparse Rewards and Dense Rewards. Sparse Rewards are given only when the agent reaches a specific goal or completes the task, making learning more difficult due to the lack of immediate feedback. On the other hand, Dense Rewards provides feedback after each step or action, helping the agent learn the correct strategy more quickly.*
