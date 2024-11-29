@@ -37,7 +37,9 @@
 | DroidTask (Wen et al., 2024) | 158        | XML    | Apps+Web         | -              | Android           |
 | B-MoCA (Lee et al., 2024)    | 60         | XML    | Apps+Web         | -              | Android           |
 | Mobile-Bench (Deng et al., 2024a) | 832   | XML    | Apps+Web         | -              | Android           |
-
+| MobileAgentBench             | 100        | -      | Apps+Web         | Dense Rewards  | Android           |
+| SPA-BENCH                    | 340        | -      | Apps+Web         | Dense Rewards  | Android           |
+| CRAB                         | 23         | -      | Apps+Web         | -              | Android + Linux           |
 *Comparison of various platforms based on templates, attach information, tasks, rewards, and supported platforms. In particular, the reward mechanisms are categorized as Sparse Rewards and Dense Rewards. Sparse Rewards are given only when the agent reaches a specific goal or completes the task, making learning more difficult due to the lack of immediate feedback. On the other hand, Dense Rewards provides feedback after each step or action, helping the agent learn the correct strategy more quickly.*
 
 For general OS systems, see the section on [`General OS Systems`](#general-os-systems).
