@@ -24,8 +24,10 @@
 | GUI-World (Chen et al., 2024a) | 12k      | -      | Apps+Web         | -              | Multi Platforms   |
 | Mobile3M (Chen et al., 2024a) | 3M        | -      | Apps             | -              | Android           |
 | Odyssey (Lu et al., 2024)    | 7735       | -      | Apps+Web         | -              | Multi Platforms   |
-| Androidcontrol               | 15283       | -      | Apps+Web         | -              | Android   |
+| Androidcontrol               | 15283       | -      | Apps+Web         | -              | Android          |
 | ScreenSpot (SeeClick)        | -           | -      | Apps+Web         | -              | Multi Platforms   |
+| MobileViews-600K             | 600k        | -      | Apps             | -              | Android          |
+
 | **Interactive Environment**  |            |        |                  |                |                   |
 | MiniWoB++ (Liu et al., 2018) | 114        | -      | Web (synthetic)  | Sparse Rewards | -                 |
 | AndroidEnv (Toyama et al., 2021) | 100    | -      | Apps             | Sparse Rewards | Android           |
